@@ -1,7 +1,6 @@
-﻿using msc.v1;
-using System;
+﻿using System;
 
-namespace msc
+namespace msc.v2
 {
     class Program
     {
@@ -17,12 +16,6 @@ namespace msc
             Console.WriteLine(d.Calculate(m2, 50));
             Console.WriteLine(d.Calculate(m3, 50));
             Console.WriteLine(d.Calculate(m4, 50));
-
-
-            MyDiscountManager d2 = new MyDiscountManager();
-            Customer  t = new Customer(4,4);
-
-            Console.WriteLine(d2.Calculate(t, 50));
         }
     }
 }

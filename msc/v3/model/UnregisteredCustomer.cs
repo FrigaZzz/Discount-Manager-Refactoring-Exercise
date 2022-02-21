@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace msc.v2
+namespace msc.v3.model
 {
 
     public  class UnregisteredCustomer:BaseCustomerClass
     {
 
 
-        public UnregisteredCustomer(int years) : base(years)
+        public UnregisteredCustomer( DateTime registrationDate = new DateTime(), CustomerTypes customerType = CustomerTypes.unregistered) :
+            base( registrationDate, customerType)
         {
-            Type =CustomerTypes.unregistered;
         }
      
 

@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using msc.v4.model;
 
-namespace msc.v2
+namespace msc.v4.behaviours.customer
 {
 
-    public  class UnregisteredCustomer:BaseCustomerClass
+    public  class UnregisteredCustomer: BaseCustomerBehaviour
     {
 
-
-        public UnregisteredCustomer(int years) : base(years)
+        public override CustomerTypes CustomerType
         {
-            Type =CustomerTypes.unregistered;
+            get { return CustomerTypes.unregistered; }
         }
-     
+
 
 
         public override decimal EvaluateDiscount(decimal amount, decimal disc)

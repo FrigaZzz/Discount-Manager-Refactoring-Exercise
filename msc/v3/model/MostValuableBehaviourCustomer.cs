@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace msc.v2
+namespace msc.v3.model
 {
-
+    
     public  class MostValuableCustomer : BaseCustomerClass
     {
 
 
-        public MostValuableCustomer(int years) : base(years)
+        public MostValuableCustomer(DateTime registrationDate = new DateTime(),
+            CustomerTypes customerType = CustomerTypes.mostValuable ):
+            base(registrationDate,customerType)
         {
-            Type =CustomerTypes.mostValuable;
+
         }
      
 

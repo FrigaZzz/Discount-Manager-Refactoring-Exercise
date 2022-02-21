@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace msc
+namespace msc.v2
 {
     public enum CustomerTypes
     {
